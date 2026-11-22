@@ -1,0 +1,117 @@
+{
+  "artifacts": {
+    "ace_jar": {
+      "sha256": "4b57c27f97ae33863ee74e6a6b892335b8e515f4337fbe321a5a1a05a335ccaf",
+      "size_bytes": 137596556
+    },
+    "unifi_core_service_js": {
+      "sha256": "c4212936afb53c0dba229ffe109d63f782c8dc631881b89f967b022ca5e80824",
+      "size_bytes": 1600430
+    }
+  },
+  "elf_inventory": [
+    {
+      "file_type": "setuid ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ccc735b4e9b9cc7d1973d1ac13dbe000d7df3b10, for GNU/Linux 3.2.0, stripped",
+      "path": "/usr/local/bin/uosserver",
+      "scope": "host",
+      "sha256": "a50b95dd4128531903349c8054f3b0cd9c35ca761e26d02b02dfc54c4586e6d7",
+      "size_bytes": 5097240
+    },
+    {
+      "file_type": "ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=d277d8cc175167a4975fb19a0f9be8622f464caf, stripped",
+      "path": "/var/lib/uosserver/bin/discovery",
+      "scope": "host",
+      "sha256": "493f08ee1ed2f32ac72a2e027fb952ccc05cf1f29f8cc6bfc7f7b47eecd1bd46",
+      "size_bytes": 2007152
+    },
+    {
+      "file_type": "ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=fa00f62d6dfde2deb97a5fd8dac5d79f84b8108b, for GNU/Linux 3.2.0, not stripped",
+      "path": "/var/lib/uosserver/bin/pasta",
+      "scope": "host",
+      "sha256": "7bc7c502c482a37638df4276de90d26546a1ddb876807e38fc9e604c7eee16e6",
+      "size_bytes": 408456
+    },
+    {
+      "file_type": "ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1a968e46285cf9743f2eb87f81d1e5a9b13d8cbd, for GNU/Linux 3.2.0, stripped",
+      "path": "/var/lib/uosserver/bin/uosserver-service",
+      "scope": "host",
+      "sha256": "cb192f1f46d9cc105b0311fefc1d7e7e027435484378d7785a617a6b2c0a769c",
+      "size_bytes": 3742928
+    },
+    {
+      "file_type": "ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f03a026fac0b066ad7d84b38d538d2aa361ed2c1, for GNU/Linux 3.2.0, stripped",
+      "path": "/var/lib/uosserver/bin/updater-service",
+      "scope": "host",
+      "sha256": "efa6c70dcc2bdfda26df3913427ce810ac3d1f06a7a14a43cf40075e0f6ec868",
+      "size_bytes": 6058704
+    },
+    {
+      "file_type": "binary",
+      "path": "/usr/bin/uos",
+      "scope": "container",
+      "sha256": "c62e777c39a1419b450ff0f9bdbd59a4d5696d9a1c9836aaec392cfa31f76a6b",
+      "size_bytes": 5596376
+    },
+    {
+      "file_type": "binary",
+      "path": "/usr/bin/uos-agent",
+      "scope": "container",
+      "sha256": "1731ab59197b0012e95bd1d474ac60306431817406e74afb5eecf70e19ed8024",
+      "size_bytes": 11734824
+    },
+    {
+      "file_type": "binary",
+      "path": "/usr/bin/uos-discovery-client",
+      "scope": "container",
+      "sha256": "2db5a9b86b0889d67a8048ebfe6b16ea0f91204e8e29b9d750711bd92a57ac7a",
+      "size_bytes": 2007168
+    },
+    {
+      "file_type": "binary",
+      "path": "/usr/sbin/unifi-directory-app",
+      "scope": "container",
+      "sha256": "b23e427f7c52f22fdcbd2ad3225862b5657d932a0b54f2467297abf0d40e433e",
+      "size_bytes": 130240674
+    },
+    {
+      "file_type": "binary",
+      "path": "/usr/sbin/unifi-identity-update-app",
+      "scope": "container",
+      "sha256": "ba19988572e2734d317220cfbe3858280bd7f4b7c46588f77aa11c9c4d78d6d2",
+      "size_bytes": 16036002
+    },
+    {
+      "file_type": "binary",
+      "path": "/usr/share/unifi-matter-controller/bin/unifi-matter-controller",
+      "scope": "container",
+      "sha256": "c1b05dbe74bd1e8f97d1e3d40199cce42043ad34af27f828c9d0dae2a4f85126",
+      "size_bytes": 253063008
+    }
+  ],
+  "extracted_at": "2026-11-22T01:50:04Z",
+  "packages": {
+    "mongodb-clients": "1:3.6.23-ubnt+deb13u1-18+g0b97a9e12d1e",
+    "mongodb-server": "1:3.6.23-ubnt+deb13u1-18+g0b97a9e12d1e",
+    "mongodb-server-core": "1:3.6.23-ubnt+deb13u1-18+g0b97a9e12d1e",
+    "ubnt-archive-keyring": "1.1.0~20+g2b93605",
+    "ubnt-tools": "6.0.23~579+g5b48b9b",
+    "ucs-agent": "1.8.8+2046",
+    "unifi": "11.1.56-38121-1",
+    "unifi-assets-uosserver": "1.0.1",
+    "unifi-core": "6.0.131",
+    "unifi-directory": "2.7.7+482",
+    "unifi-email-templates-all": "1.4.0-rc.4",
+    "unifi-identity-update": "1.1.15+55",
+    "unifi-matter-controller": "1.0.2",
+    "uos": "6.0.4",
+    "uos-agent": "6.0.5",
+    "uos-discovery-client": "6.0.7",
+    "uos-server-base-files": "6.0.111~1864+g4220b4c0"
+  },
+  "release_id": "unifi-11.1.56-38121-1_core-6.0.131",
+  "source": {
+    "image": "docker.io/library/uosserver:fd48e96764d3 ffd81e1591037895513c2dff181282e1bfffb4e6e0c8bbc484cbd9d94c6ade2e",
+    "mode": "ssh",
+    "target": null
+  }
+}

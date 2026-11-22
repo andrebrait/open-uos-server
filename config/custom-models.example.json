@@ -1,0 +1,59 @@
+{
+  "models": [
+    {
+      "model": "RTL_LG510S",
+      "name": "RTLPlayground LG510S 10-Port Switch",
+      "abbrev": "LG510S",
+      "sku": "RTL-LG510S",
+      "type": "USW",
+      "chipset": "REALTEK",
+      "sysid": "f901",
+      "port_num": 10,
+      "standard_ports": 8,
+      "sfp_ports": [9, 10],
+      "max_speed_mbps": 2500,
+      "features": [
+        "SWITCH",
+        "HAS_CLIENTS",
+        "HAS_TEMPERATURE_SENSOR"
+      ],
+      "icon_model": "USL8LP"
+    },
+    {
+      "model": "OPENWRT_SW8",
+      "name": "OpenWrt 8-Port Managed Switch",
+      "abbrev": "OpenWrt SW8",
+      "sku": "OPENWRT-SW8",
+      "type": "USW",
+      "chipset": "REALTEK",
+      "sysid": "f902",
+      "port_num": 8,
+      "standard_ports": 8,
+      "sfp_ports": [],
+      "max_speed_mbps": 1000,
+      "features": [
+        "SWITCH",
+        "HAS_CLIENTS"
+      ],
+      "icon_model": "US8"
+    },
+    {
+      "model": "PFSENSE_GW",
+      "name": "pfSense Firewall Gateway",
+      "abbrev": "pfSense GW",
+      "sku": "PFSENSE-GW",
+      "type": "UGW",
+      "chipset": "INTEL",
+      "sysid": "f903",
+      "port_num": 4,
+      "standard_ports": 4,
+      "sfp_ports": [],
+      "max_speed_mbps": 10000,
+      "features": [
+        "GATEWAY",
+        "HAS_CLIENTS"
+      ],
+      "icon_model": "UGW3"
+    }
+  ]
+}

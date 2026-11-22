@@ -1,0 +1,34 @@
+services:
+  unifi-os-server:
+    build:
+      context: ../..
+      dockerfile: docker/uosserver/Dockerfile
+    container_name: open-uos-server
+    restart: unless-stopped
+    cgroup: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - TZ=UTC
+      # Set to the LAN IP that UniFi devices use to reach this server.
+      - UOS_SYSTEM_IP=192.168.1.50
+    ports:
+      - "11443:443"
+      - "8080:8080"
+      - "8444:8444"
+      - "8880-8882:8880-8882"
+      - "3478:3478/udp"
+      - "10003:10003/udp"
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - uos_data:/data
+      - uos_state:/var/lib/uosserver
+    tmpfs:
+      - /run:exec
+      - /run/lock
+      - /tmp:exec
+
+volumes:
+  uos_data:
+  uos_state:

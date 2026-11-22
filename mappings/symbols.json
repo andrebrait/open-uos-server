@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "release_id": "unifi-11.1.56-38121-1_core-6.0.131",
+  "symbols": [
+    {
+      "id": "ace.boot_launcher",
+      "description": "Spring Boot entrypoint inside ace.jar BOOT-INF/classes",
+      "class": "com/ubnt/ace/BootLauncher",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [
+          "Lorg/springframework/boot/SpringBootConfiguration;"
+        ],
+        "strings": [
+          "Initiating startup"
+        ]
+      }
+    },
+    {
+      "id": "ace.launcher",
+      "description": "Main UniFi Network launcher class",
+      "class": "com/ubnt/ace/Launcher",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [],
+        "strings": []
+      }
+    },
+    {
+      "id": "model.device_model_enum",
+      "description": "Master DeviceModel enum (model code, type, features, chipset, sysId, port count, max speed)",
+      "class": "com/ubnt/k/g/a/JXjpchbRPAQlZmA",
+      "anchors": {
+        "super": "java/lang/Enum",
+        "annotations": [],
+        "strings": [
+          "US24P250",
+          "USL8LP",
+          "UNKNOWN"
+        ]
+      }
+    },
+    {
+      "id": "data.device",
+      "description": "Device model object (hasPortEeeCapability, getPortMediaTypeOnIdx, isFlowControlEnabled, setUpgradable)",
+      "class": "com/ubnt/data/cgtQt",
+      "anchors": {
+        "super": "com/ubnt/data/mWuuombW",
+        "annotations": [],
+        "strings": [
+          "flowctrl_enabled",
+          "upgradable",
+          "model_in_lts",
+          "config_port_table"
+        ]
+      }
+    },
+    {
+      "id": "data.port_media_type",
+      "description": "PortMediaType enum mapping FE/GE/2.5GE/10GE (copper) vs SFP/SFP+/SFP28/QSFP28 (fiber)",
+      "class": "com/ubnt/data/ZhjkRvYDcWYpgoJ",
+      "anchors": {
+        "super": "java/lang/Enum",
+        "annotations": [],
+        "strings": [
+          "2.5GE",
+          "SFP+",
+          "SFP28",
+          "QSFP28"
+        ]
+      }
+    },
+    {
+      "id": "config.usw_switch_config_generator",
+      "description": "Generates USW system.cfg including switch.port.<idx>.flowctrl and switch.port.<idx>.eee",
+      "class": "com/ubnt/service/config/rywXKdLGZvAktNSA",
+      "anchors": {
+        "super": "com/ubnt/service/config/uMhILLuLZjIoCLrINy",
+        "annotations": [],
+        "strings": [
+          "switch.port",
+          "flow_control_enabled",
+          "eee_enabled",
+          "flowctrl",
+          "eee"
+        ]
+      }
+    },
+    {
+      "id": "config.global_switch_setting_service",
+      "description": "Reads site global_switch settings (flowctrl_enabled, jumboframe_enabled, dot1x_portctrl_enabled)",
+      "class": "com/ubnt/service/T/MJmYip",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [],
+        "strings": [
+          "flowctrl_enabled",
+          "jumboframe_enabled",
+          "dot1x_portctrl_enabled"
+        ]
+      }
+    },
+    {
+      "id": "config.global_switch_default_builder",
+      "description": "Initializes default GLOBAL_SWITCH setting document (stp_version, dhcp_snoop, flowctrl_enabled)",
+      "class": "com/ubnt/service/aw/k/e/b/PJXgBbUiXtqUGyl",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [],
+        "strings": [
+          "flowctrl_enabled",
+          "jumboframe_enabled",
+          "dhcp_snoop",
+          "stp_version"
+        ]
+      }
+    },
+    {
+      "id": "devmgr.port_config_diff_detector",
+      "description": "Detects per-port configuration changes (flow_control_enabled, eee_enabled) to trigger reprovision",
+      "class": "com/ubnt/service/devmgr/bUvuLwmOeU",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [],
+        "strings": [
+          "flow_control_enabled",
+          "eee_enabled",
+          "precision_time_protocol_enabled"
+        ]
+      }
+    },
+    {
+      "id": "uidb.utils",
+      "description": "UiDbUtils loading and filtering uidb.json snapshots into ModelMeta records",
+      "class": "com/ubnt/service/bu/vCisP",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [],
+        "strings": [
+          "[UIDB] skip fetch content of url [{}] due to same eTag [{}]",
+          "[UIDB] Local UI DB file [{}] does not exist"
+        ]
+      }
+    },
+    {
+      "id": "firmware.product_info_table_generator",
+      "description": "Builds firmware/model table from DeviceModel.values()",
+      "class": "com/ubnt/service/aK/ILrOuJdCCsCwHdll",
+      "anchors": {
+        "super": "java/lang/Object",
+        "annotations": [],
+        "strings": []
+      }
+    }
+  ]
+}

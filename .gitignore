@@ -1,0 +1,16 @@
+# Extracted upstream artifacts, decompiled trees, and local tool caches.
+# Never commit Ubiquiti proprietary binaries or raw decompiled sources.
+work/
+
+# Build outputs
+agent/build/
+agent/.gradle/
+.gradle/
+*.jar
+
+# Python / OS / IDE
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+*.iml
